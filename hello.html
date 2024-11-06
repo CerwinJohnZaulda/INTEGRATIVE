@@ -1,0 +1,28 @@
+<div id="container" style="background-color: red; height: 200px; width: 200px;"></div>
+<br>
+<button onclick="changeColor()">changeColor</button>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+<p>Hello World</p>
+
+<button onclick="sum()">Click ME!</button>
+
+<script>
+    let colors = [ 'green', 'pink', 'black'];
+    let currentcolorindex = 0;
+
+    function changeColor(){
+        currentcolorindex = (currentcolorindex + 1) % colors.length;
+        document.getElementById('container').style.backgroundColor = colors[currentcolorindex];
+    }
+
+    function sum(){
+        let num1 = 10;
+        let num2 = 10;
+
+        alert(num1 + num2);
+    }
+
+    
+</script>
